@@ -7,6 +7,9 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    base: '/navego_rutas_ducuing/',
+    plugins: [react()],
+    
     files: ['**/*.{js,jsx}'],
     extends: [
       js.configs.recommended,
